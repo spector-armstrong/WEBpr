@@ -4,16 +4,68 @@
     <meta charset="UTF-8" />
     <title>Juzuf's Social Interaction Service</title>
     <style>
+        header {
+            display: flex;
+            flex-direction: column;
+        }
 
+        header >* {
+            justify-content: center;
+        }
+
+        h6 {
+            font-size: large;
+        }
+
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 2px;
+            margin: 20px 20px 20px;
+            padding: 10px;
+            width: 23%;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Juzuf's Social Interaction Service</h1>
-        <h3>Book an interaction with me!</h3>
+        <h2>Book an interaction with me (I reserve the right to not enjoy it)</h2>
     </header>
     <div class="catalogue">
-        
+        <div class="card">
+            <img src="" alt="" />
+            <h6>Small talk</h6>
+            <h6>$100</h6>
+            <button class="cart" type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="" alt="" />
+            <h6>Lighthearted chat + 2 jokes</h6>
+            <h6>$250</h6>
+            <button class="cart" type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="" alt="" />
+            <h6>Discussion/banter (75 words max.)</h6>
+            <h6>$500</h6>
+            <button class="cart" type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="" alt="" />
+            <h6>Deep convo with handshake</h6>
+            <h6>$1000</h6>
+            <button class="cart" type="button">Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="" alt="" />
+            <h6>Hangout with me & my dog (must bring chew toy)</h6>
+            <h6>$1500</h6>
+            <button class="cart" type="button">Add to cart</button>
+        </div>
     </div>
 </body>
 </html>
