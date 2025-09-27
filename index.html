@@ -2,17 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
     <title>Kimi's Social Interaction Service</title>
     <style>
         header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: 'Jacquard 12';
         }
 
+        header h1 {
+            font-size: 3em;
+            margin: 25px 0 5px 0;
+            letter-spacing: 3px;
+        }
 
-        h6 {
-            font-size: large;
+        header h2 {
+            margin: 5px 0 25px 0;
         }
 
         .catalogue {
@@ -37,8 +46,30 @@
         }
 
         .desc {
+            margin: 10% 0 0 0;
+            font-family: 'Jacquard 12';
+            font-size: 1.3rem;
+            height: 25%;
+        }
+
+        .price {
             margin: 0;
         }
+
+        .purchase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 10% 0 3% 0;
+            font-family: 'Jacquard 12';
+            font-size: 2rem;
+        }
+        
+        button {
+            font-family: 'Jacquard 12';
+            font-size: 1rem;
+        }
+
+
     </style>
 </head>
 <body>
@@ -50,32 +81,43 @@
         <div class="card">
             <img src="references/smalltalk.jpg" alt="Small talk" />
             <h6 class="desc">Small talk</h6>
-            <h6 class="price">$100</h6>
-            <button class="cart" type="button">Add to cart</button>
+            <div class="purchase">
+                <h6 class="price">$100</h6>
+                <button class="cart" type="button">Add to cart</button>
+            </div>            
         </div>
         <div class="card">
             <img src="references/2jokes.jpg" alt="Lighthearted chat" />
             <h6 class="desc">Lighthearted chat + 2 jokes</h6>
-            <h6 class="price">$250</h6>
-            <button class="cart" type="button">Add to cart</button>
+            <div class="purchase">
+                <h6 class="price">$250</h6>
+                <button class="cart" type="button">Add to cart</button>
+            </div>            
         </div>
         <div class="card">
             <img src="references/banter.jpg" alt="Banter" />
             <h6 class="desc">Discussion/banter (75 words max.)</h6>
-            <h6 class="price">$500</h6>
-            <button class="cart" type="button">Add to cart</button>
+            <div class="purchase">
+                <h6 class="price">$500</h6>
+                <button class="cart" type="button">Add to cart</button>
+            </div>
+            
         </div>
         <div class="card">
             <img src="references/handshake.jpg" alt="Handshake" />
             <h6 class="desc">Deep convo with handshake</h6>
-            <h6 class="price">$1000</h6>
-            <button class="cart" type="button">Add to cart</button>
+            <div class="purchase">
+                <h6 class="price">$1000</h6>
+                <button class="cart" type="button">Add to cart</button>
+            </div>            
         </div>
         <div class="card">
             <img src="references/withdog.jpg" alt="With dog" />
             <h6 class="desc">Hangout with me & my dog (must bring chew toy)</h6>
-            <h6 class="price">$1500</h6>
-            <button class="cart" type="button">Add to cart</button>
+            <div class="purchase">
+                <h6 class="price">$1500</h6>
+                <button class="cart" type="button">Add to cart</button>
+            </div>            
         </div>
     </div>
 </body>
