@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Juzuf's Social Interaction Service</title>
+    <title>Kimi's Social Interaction Service</title>
     <style>
         header {
             display: flex;
@@ -21,47 +21,60 @@
         }
 
         .card {
-            border: 2px;
+            border: 2px solid black;
             margin: 20px 20px 20px;
             padding: 10px;
-            width: 23%;
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .desc {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Juzuf's Social Interaction Service</h1>
+        <h1>Kimi's Social Interaction Service</h1>
         <h2>Book an interaction with me (I reserve the right to not enjoy it)</h2>
     </header>
     <div class="catalogue">
         <div class="card">
             <img src="references/smalltalk.jpg" alt="Small talk" />
-            <h6>Small talk</h6>
-            <h6>$100</h6>
+            <h6 class="desc">Small talk</h6>
+            <h6 class="price">$100</h6>
             <button class="cart" type="button">Add to cart</button>
         </div>
         <div class="card">
             <img src="references/2jokes.jpg" alt="Lighthearted chat" />
-            <h6>Lighthearted chat + 2 jokes</h6>
-            <h6>$250</h6>
+            <h6 class="desc">Lighthearted chat + 2 jokes</h6>
+            <h6 class="price">$250</h6>
             <button class="cart" type="button">Add to cart</button>
         </div>
         <div class="card">
             <img src="references/banter.jpg" alt="Banter" />
-            <h6>Discussion/banter (75 words max.)</h6>
-            <h6>$500</h6>
+            <h6 class="desc">Discussion/banter (75 words max.)</h6>
+            <h6 class="price">$500</h6>
             <button class="cart" type="button">Add to cart</button>
         </div>
         <div class="card">
             <img src="references/handshake.jpg" alt="Handshake" />
-            <h6>Deep convo with handshake</h6>
-            <h6>$1000</h6>
+            <h6 class="desc">Deep convo with handshake</h6>
+            <h6 class="price">$1000</h6>
             <button class="cart" type="button">Add to cart</button>
         </div>
         <div class="card">
             <img src="references/withdog.jpg" alt="With dog" />
-            <h6>Hangout with me & my dog (must bring chew toy)</h6>
-            <h6>$1500</h6>
+            <h6 class="desc">Hangout with me & my dog (must bring chew toy)</h6>
+            <h6 class="price">$1500</h6>
             <button class="cart" type="button">Add to cart</button>
         </div>
     </div>
